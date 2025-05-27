@@ -1,0 +1,13 @@
+# PROVA – Introdução à Programação (BIA)
+#**Nome completo:** Ivanildo Hyvo Silva Santos
+#**Matrícula:** 2022129520039
+#**E-mail institucional:** ivanildohyvo@discente.ufg.br
+
+## QUESTÃO 5
+### a)
+O principal framework adotado em nosso projeto é o OpenCV, amplamente empregado para captura, armazenamento, manipulação e pré-processamento dos frames da gameplay. Ele foi selecionado principalmente pela sua facilidade no tratamento de imagens e por já conter funções específicas que auxiliam no desenvolvimento com machine learning. Além disso, é altamente otimizado e apresenta excelente desempenho nas operações mencionadas.
+Paralelamente, estamos também explorando o uso do StreamLit com o objetivo de desenvolver a interface gráfica responsável por exibir ao usuário as dicas geradas pela LLM. Já conseguimos integrar APIs para transmitir e receber dados da LLM escolhida, que, neste caso, é a LLaMA 3.2 Vision Pro Free.
+### b)
+Uma das partes do projeto é fazer com que a gravação da tela comece automaticamente assim que o jogo for aberto. Isso é feito com comandos que configuram o vídeo para ser salvo no formato XVID e definem os detalhes da gravação, como a largura, altura e taxa de quadros. Quem cuida da gravação em si é a classe cv2.VideoWriter. Além disso, o vídeo é convertido para preto e branco, o que deixa o arquivo mais leve e mais fácil de enviar para a LLM, já que ela não precisa da informação de cor para fazer a análise.
+### c)
+Iniciamos a pouco tempo as pesquisas relacionadas ao StreamLit, porém ainda estamos ligeiramente no começo da interface gráfica então não foi muito bem implementado, apesar de termos uma boa ideia de qual caminho deveremos seguir.
